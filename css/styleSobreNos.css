@@ -1,6 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+ 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #ECE8F6;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-color: #ece8f6;
+   font-family: "Inter", sans-serif;
 }
+ 
+.nav-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1rem;
+}
+ 
+#logo-header {
+   width: 90px;
+   height: auto;
+}
+ 
+#style-nav-header {
+   gap: 1.4rem;
+   color: #2f197b;
+}
+ 
+#style-nav-header a {
+   color: inherit;
+   text-decoration: none;
+   font-size: 1.4rem;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+section{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.position-first-section-sobre-nos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.style-first-caption{
+    font-size: 50px;
+    font-weight: 600;
+    color: #8481b6;
+}
+
+.style-first-caption-2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #695d93;
+}
+
+.size-img-pata{
+    width: 30px;
+    height: 30px;
+}
+
+.line-title{
+    height: 2px;
+    width: 150px;
+    background-color: #8481b6;
+}
+
+.first-text-position-sobre-nos{
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.first-text-style-sobre-nos{
+    font-size: 18px;
+    color: #695d93;
+    line-height: 1.6;
+}
+
+.position-title-text-sobre-nos-first{
+    margin-top: 2rem;
+}
+
+.position-img-team{
+    margin-top: 1rem;
+}
+
+.style-first-img{
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.position-second-section-sobre-nos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+
+.second-title-position{
+    margin-top: 10rem;
+}
+
+.container {
+    display: flex;            
+    flex-direction: column;  
+    text-align: center;
+}
+
+.size-img-valores{
+    width: 12rem;
+    height: 12rem;
+    max-width: 100%;
+}
+
+.size-text-valores {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500; 
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: #8481b6;
+}
+
+.position-text-valores-2{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.style-text-valores-2{
+    font-size: 18px;
+    line-height: 1.4;
+    color: #695d93;
+}
+
+
+
+
+
