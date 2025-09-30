@@ -1,36 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Medicina Veterinaria</title>
+      <link rel="stylesheet" href="/css/style.css" />
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicina Veterinaria</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-    <header>
-        <div class="nav-header">
+   <body>
+      <!-- Header -->
+      <header>
+         <div class="nav-header">
             <div>
-                <img src="/assets/logoMedWeb.png" alt="">
+               <a href="/index.html"
+                  ><img src="/assets/logoMedWeb.png" alt="" id="logo-header"
+               /></a>
             </div>
-            <div>
-                <li class="nav-header" id="style-nav-header">
-                    <ul>Home</ul>
-                    <ul>Sobre Nós</ul>
-                    <ul>Contato</ul>
-                </li>
+            <nav>
+               <li class="nav-header" id="style-nav-header">
+                  <ul>
+                     <a href="/index.html">Home</a>
+                  </ul>
+                  <ul>
+                     <a href="/pages/sobreNos.html">Sobre Nós</a>
+                  </ul>
+                  <ul>
+                     <a href="">Contato</a>
+                  </ul>
+               </li>
+            </nav>
+         </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+         <div class="hero-container">
+            <div class="hero-content">
+               <h1 class="hero-title">
+                  O melhor cuidado para o seu pet começa aqui!
+               </h1>
+               <p class="hero-description">
+                  Aqui você encontra dicas práticas, informações confiáveis e
+                  orientações veterinárias para garantir uma vida longa e feliz
+                  ao seu pet
+               </p>
+               <button class="hero-button">Explore Cuidados</button>
             </div>
-        </div>
-    </header>
-    <section>
+            <div class="hero-image">
+               <img
+                  src="/assets/cachorro.png"
+                  alt="Cachorro feliz"
+                  class="hero-dog-image"
+               />
+               <div class="stats-container">
+                  <div class="stat-item stat-100">
+                     <span class="stat-number">100%</span>
+                     <span class="stat-text">focado no bem-estar</span>
+                  </div>
+                  <div class="stat-item stat-1000">
+                     <span class="stat-number">+1.000</span>
+                     <span class="stat-text">vidas impactadas</span>
+                  </div>
+               </div>
+               <div class="pet-paws">
+                  <span class="paw paw-1">🐾</span>
+                  <span class="paw paw-2">🐾</span>
+                  <span class="paw paw-3">🐾</span>
+                  <span class="paw paw-4">🐾</span>
+               </div>
+            </div>
+         </div>
+      </section>
 
-    </section>
-    <section>
+      <!-- Care Section -->
+      <section class="care-section">
+         <div class="care-container">
+            <div class="care-image">
+               <img
+                  src="/assets/cachorroGato.png"
+                  alt="Cachorro e gato juntos"
+                  class="care-pets-image"
+               />
+            </div>
+            <div class="care-content">
+               <h2 class="care-title">
+                  Tudo o que você precisa saber para cuidar bem do seu pet
+               </h2>
+               <p class="care-description">
+                  Cuidar de um pet vai muito além de oferecer comida e carinho.
+                  Conheça os pilares essenciais para garantir saúde, bem-estar e
+                  uma vida longa ao seu animal de estimação.
+               </p>
+            </div>
+         </div>
+      </section>
 
-    </section>
-    <footer>
+      <!-- Cards Section -->
+      <section class="cards-section">
+         <div class="cards-container">
+            <div class="card">
+               <h3 class="card-title">
+                  "Milhares de pets sofrem maus-tratos todos os dias."
+               </h3>
+               <p class="card-description">
+                  Denuncie! Proteja quem não pode falar.
+               </p>
+            </div>
+            <div class="card">
+               <h3 class="card-title">
+                  "Abandono causa dor física e emocional aos animais."
+               </h3>
+               <p class="card-description">
+                  Adote a responsabilidade, não o abandono.
+               </p>
+            </div>
+            <div class="card">
+               <h3 class="card-title">
+                  "Negligenciar a saúde do pet é uma forma de sofrimento."
+               </h3>
+               <p class="card-description">
+                  Vacine, alimente e cuide com amor.
+               </p>
+            </div>
+         </div>
+      </section>
 
-    </footer>
-</body>
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="footer-container">
+            <div class="footer-content">
+               <div class="footer-info">
+                  <h3 class="footer-title">
+                     Conteúdo educativo, não substitui atendimento veterinário
+                  </h3>
+                  <p class="footer-schedule">
+                     Horário: Seg-Sex 9h-18h • Sáb 9h-12h
+                  </p>
+               </div>
+               <div class="footer-social">
+                  <p class="social-item">Instagram: @animalia_</p>
+                  <p class="social-item">Facebook: @animalia</p>
+                  <p class="social-item">Tiktok: @animalia_cuidados</p>
+                  <p class="social-item">Youtube: @animalia</p>
+               </div>
+               <div class="footer-logo">
+                  <img
+                     src="/assets/logoMedWeb.png"
+                     alt="Animalia Logo"
+                     class="footer-logo-img"
+                  />
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <p class="footer-copyright">
+                  © 2025 Animalia — Dicas simples para tutores responsáveis.
+               </p>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
