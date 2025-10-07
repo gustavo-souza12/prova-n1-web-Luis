@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Animalia</title>
-      <link rel="stylesheet" href="/css/style.css" />
+      <title>Animalia - Home</title>
+      <link rel="stylesheet" href="css/shared.css" />
+      <link rel="stylesheet" href="css/style.css" />
    </head>
 
-   <body>
+   <body class="home">
+      <!-- Mobile Menu Checkbox -->
+      <input type="checkbox" id="mobile-menu" class="mobile-menu-checkbox" />
+
       <!-- Header -->
       <header>
          <div class="nav-header">
-            <div>
-                <img src="/assets/logoMedWeb.png" alt="">
+            <div class="logo-container">
+               <a href="index.html">
+                  <img
+                     src="assets/logoMedWeb.png"
+                     alt="Animalia Logo"
+                     id="logo-header"
+                  />
+               </a>
             </div>
             <nav>
-               <li class="nav-header" id="style-nav-header">
-                  <ul>
-                     <a href="/index.html">Home</a>
-                  </ul>
-                  <ul>
-                     <a href="/pages/sobreNos.html">Sobre Nós</a>
-                  </ul>
-                  <ul>
-                     <a href="/pages/cuidados.html">Cuidados</a>
-                  </ul>
-               </li>
+               <label
+                  for="mobile-menu"
+                  class="mobile-menu-toggle"
+                  aria-label="Abrir menu"
+               ></label>
+               <ul class="nav-list">
+                  <li class="nav-item">
+                     <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="pages/sobreNos.html" class="nav-link"
+                        >Sobre Nós</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a href="pages/cuidados.html" class="nav-link">Cuidados</a>
+                  </li>
+               </ul>
             </nav>
          </div>
       </header>
@@ -42,7 +59,9 @@
                   orientações veterinárias para garantir uma vida longa e feliz
                   ao seu pet
                </p>
-               <button class="hero-button">Explore Cuidados</button>
+               <a href="pages/cuidados.html" class="hero-button"
+                  >Explore Cuidados</a
+               >
             </div>
             <div class="hero-image">
                <img

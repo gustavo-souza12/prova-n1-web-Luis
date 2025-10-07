@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Animalia - Sobre Nós</title>
-      <link rel="stylesheet" href="/css/styleSobreNos.css" />
+      <link rel="stylesheet" href="../css/shared.css" />
+      <link rel="stylesheet" href="../css/styleSobreNos.css" />
    </head>
 
-   <body>
+   <body class="sobre">
+      <!-- Mobile Menu Checkbox -->
+      <input type="checkbox" id="mobile-menu" class="mobile-menu-checkbox" />
+
       <header>
          <div class="nav-header">
-            <div>
-               <a href="/index.html"
-                  ><img src="/assets/logoMedWeb.png" alt="" id="logo-header"
-               /></a>
+            <div class="logo-container">
+               <a href="../index.html">
+                  <img
+                     src="../assets/logoMedWeb.png"
+                     alt="Animalia Logo"
+                     id="logo-header"
+                  />
+               </a>
             </div>
             <nav>
-               <li class="nav-header" id="style-nav-header">
-                  <ul>
-                     <a href="/index.html">Home</a>
-                  </ul>
-                  <ul>
-                     <a href="/pages/sobreNos.html">Sobre Nós</a>
-                  </ul>
-                  <ul>
-                     <a href="/pages/cuidados.html">Cuidados</a>
-                  </ul>
-               </li>
+               <label
+                  for="mobile-menu"
+                  class="mobile-menu-toggle"
+                  aria-label="Abrir menu"
+               ></label>
+               <ul class="nav-list">
+                  <li class="nav-item">
+                     <a href="../index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="sobreNos.html" class="nav-link">Sobre Nós</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="cuidados.html" class="nav-link">Cuidados</a>
+                  </li>
+               </ul>
             </nav>
          </div>
       </header>
@@ -69,7 +82,7 @@
             </div>
          </div>
       </section>
-      <section>
+      <section class="second-section-sobre-nos">
          <div>
             <div class="second-title-position">
                <span class="style-first-caption">Valores</span>
