@@ -1,4 +1,3 @@
-/* Sobre Nós Page Specific Styles */
 
 body {
    background-color: #ece8f6;
@@ -54,13 +53,12 @@ section {
 }
 
 .position-img-team {
-   margin-top: 1rem;
+   margin-top: 2rem;
 }
 
 .style-first-img {
    width: 25rem;
    height: 25rem;
-   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
    border-radius: 10px;
 }
 
@@ -112,4 +110,3 @@ section {
    color: #695d93;
 }
 
-/* Page-specific footer customizations can go here if needed */

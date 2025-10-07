@@ -1,4 +1,4 @@
-/* Cuidados Page Specific Styles */
+
 
 body {
    background: #e8e4f3;
@@ -51,7 +51,7 @@ body {
    width: 50px;
    height: 50px;
 }
-/* Page-specific header customizations */
+
 .nav-header {
    background: #e8e4f3;
    border-radius: 10px;
@@ -173,7 +173,6 @@ body {
    grid-template-columns: 1fr 1fr;
    gap: 10px 30px;
 }
-/* Page-specific footer customizations */
 
 @media (max-width: 1024px) {
    .pet-container {

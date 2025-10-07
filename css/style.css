@@ -1,11 +1,8 @@
-/* Home Page Specific Styles */
 
-/* Ensure consistent background */
 * {
    background-color: #ece8f6;
 }
 
-/* Hero Section */
 .hero-section {
    min-height: 80vh;
    display: flex;
@@ -193,7 +190,6 @@
    }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
    .hero-container {
       grid-template-columns: 1fr;
@@ -238,7 +234,6 @@
    }
 }
 
-/* Care Section */
 .care-section {
    padding: 6rem 0;
 }
@@ -292,7 +287,6 @@
    opacity: 0.9;
 }
 
-/* Care Section Responsive */
 @media (max-width: 1024px) {
    .care-container {
       gap: 4rem;
@@ -360,7 +354,6 @@
    }
 }
 
-/* Cards Section */
 .cards-section {
    padding: 6rem 0;
 }
@@ -410,7 +403,6 @@
    font-weight: 500;
 }
 
-/* Cards Section Responsive */
 @media (max-width: 1024px) {
    .cards-container {
       gap: 2.5rem;
@@ -478,4 +470,3 @@
    }
 }
 
-/* Page specific footer customizations can go here if needed */

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-/* CSS Variables for consistent theming */
 :root {
    --primary-color: #2f197b;
    --secondary-color: #8481b6;
@@ -16,7 +15,6 @@
    --transition-slow: 0.5s ease;
 }
 
-/* Reset and Base Styles */
 * {
    margin: 0;
    padding: 0;
@@ -32,7 +30,6 @@ body {
    scroll-behavior: smooth;
 }
 
-/* Scroll-triggered animations using CSS only */
 @media (prefers-reduced-motion: no-preference) {
    body {
       animation: pageLoad 0.8s ease-out;
@@ -50,7 +47,6 @@ body {
    }
 }
 
-/* Header Styles */
 header {
    background-color: var(--background-color);
    box-shadow: 0 2px 10px var(--shadow-light);
@@ -131,7 +127,6 @@ nav {
    cursor: pointer;
 }
 
-/* This rule is now inside the main desktop media query above */
 
 .nav-link.active {
    background-color: var(--primary-color);
@@ -150,7 +145,6 @@ nav {
    border-radius: 50%;
 }
 
-/* Mobile Navigation - CSS Only with working toggle */
 .mobile-menu-checkbox {
    display: none;
    position: absolute;
@@ -191,7 +185,6 @@ nav {
    line-height: 1;
 }
 
-/* Mobile menu styles */
 @media (max-width: 768px) {
    .mobile-menu-toggle {
       display: block;
@@ -201,7 +194,6 @@ nav {
       position: relative;
    }
 
-   /* Hide desktop navigation on mobile */
    .nav-list {
       position: absolute;
       top: 100%;
@@ -224,7 +216,6 @@ nav {
       border: 1px solid var(--shadow-light);
    }
 
-   /* Show menu when checkbox is checked */
    .mobile-menu-checkbox:checked + header .nav-list {
       transform: translateY(0) scale(1);
       opacity: 1;
@@ -233,7 +224,6 @@ nav {
       padding: 1.5rem;
    }
 
-   /* Change hamburger to X when menu is open */
    .mobile-menu-checkbox:checked + header .mobile-menu-toggle::before {
       content: "✕";
       font-size: 1.8rem;
@@ -263,7 +253,6 @@ nav {
       box-shadow: 0 5px 15px var(--shadow-medium);
    }
 
-   /* Active page styling for mobile */
    body.home .nav-link[href*="index.html"],
    body.sobre .nav-link[href*="sobreNos.html"],
    body.cuidados .nav-link[href*="cuidados.html"] {
@@ -271,7 +260,6 @@ nav {
       color: white;
    }
 
-   /* Backdrop overlay when menu is open */
    .mobile-menu-checkbox:checked + header::after {
       content: "";
       position: fixed;
@@ -285,7 +273,6 @@ nav {
    }
 }
 
-/* Footer Styles */
 .footer {
    background: linear-gradient(
       135deg,
@@ -399,7 +386,6 @@ nav {
    }
 }
 
-/* Common Animations */
 @keyframes fadeInUp {
    from {
       opacity: 0;
@@ -431,7 +417,6 @@ nav {
    }
 }
 
-/* Utility Classes */
 .fade-in {
    animation: fadeInUp 0.6s ease forwards;
 }
@@ -444,12 +429,10 @@ nav {
    animation: pulse 2s ease-in-out infinite;
 }
 
-/* Smooth Scrolling */
 html {
    scroll-behavior: smooth;
 }
 
-/* CSS-only page detection for active navigation */
 body.home .nav-link[href*="index.html"] {
    background-color: var(--primary-color);
    color: white;
@@ -465,9 +448,7 @@ body.cuidados .nav-link[href*="cuidados.html"] {
    color: white;
 }
 
-/* Desktop navigation - clean and simple */
 @media (min-width: 769px) {
-   /* Hide mobile elements completely on desktop */
    .mobile-menu-toggle {
       display: none !important;
    }
@@ -476,7 +457,6 @@ body.cuidados .nav-link[href*="cuidados.html"] {
       display: none !important;
    }
 
-   /* Reset all positioning to default */
    .nav-list {
       position: static;
       display: flex;
@@ -505,7 +485,6 @@ body.cuidados .nav-link[href*="cuidados.html"] {
    }
 }
 
-/* Enhanced animations */
 @keyframes slideInUp {
    from {
       opacity: 0;
@@ -539,7 +518,6 @@ body.cuidados .nav-link[href*="cuidados.html"] {
    }
 }
 
-/* Enhanced CSS-only animations */
 .animate-on-scroll {
    animation: slideInUp 0.6s ease forwards;
    animation-delay: 0.2s;
@@ -553,7 +531,6 @@ body.cuidados .nav-link[href*="cuidados.html"] {
    animation-name: slideInRight;
 }
 
-/* Enhanced button animations */
 .hero-button,
 button {
    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -571,7 +548,6 @@ button:active {
    box-shadow: 0 5px 15px rgba(47, 25, 123, 0.3);
 }
 
-/* Enhanced card animations */
 .card {
    transition: all 0.3s ease;
    animation: slideInUp 0.6s ease forwards;
@@ -592,7 +568,6 @@ button:active {
    animation-delay: 0.3s;
 }
 
-/* Enhanced section animations */
 section {
    animation: fadeInUp 0.8s ease forwards;
 }
@@ -607,7 +582,6 @@ section:nth-child(4) {
    animation-delay: 0.3s;
 }
 
-/* Enhanced image hover effects */
 img {
    transition: all 0.3s ease;
 }
@@ -618,7 +592,6 @@ img {
    transform: scale(1.05);
 }
 
-/* Enhanced navigation animations */
 .nav-link {
    position: relative;
    overflow: hidden;
@@ -646,14 +619,12 @@ img {
    left: 100%;
 }
 
-/* Focus Styles for Accessibility */
 *:focus-visible {
    outline: 2px solid var(--secondary-color);
    outline-offset: 2px;
    border-radius: 4px;
 }
 
-/* Enhanced focus for interactive elements */
 .nav-link:focus-visible,
 .hero-button:focus-visible,
 .mobile-menu-toggle:focus-visible {
